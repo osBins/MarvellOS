@@ -61,7 +61,8 @@ def tick():
 
 
 def welcome(o=""):
-    """Function to open WELCOME SCREEN - Login screen that opens when you run."""
+    """Function to open WELCOME SCREEN - Login screen that opens when you
+        run."""
 
     global clock
     global welcome_screen
@@ -91,8 +92,7 @@ def welcome(o=""):
         confirmbtn["bg"] = "cyan"
         confirmbtn["state"] = "normal"
 
-
-    def confirm(event=None):  
+    def confirm(event=None):
         """Confirm button function"""
 
         global welcome_screen
@@ -342,7 +342,6 @@ class Home:
         lock.place(x=143, y=368)
 
         home.mainloop()
-
 
     def tick1(self):
         """Clock"""
@@ -1244,7 +1243,6 @@ class Home:
     except OverflowError:
         self.ans["text"] = "Out of range"
 
-
     def next(self):
         """Changing password"""
 
@@ -1365,10 +1363,9 @@ class Home:
             self.sh = False
             self.show.config(text="Show")
 
-
     def home_button1(self):
         """Home buttons for all screens"""
-        
+
         global home_screen  # home button for calculator
         self.calcwin.destroy()
         home_screen = Home()
