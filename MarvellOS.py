@@ -74,9 +74,9 @@ def welcome(o=""):
         home.after_cancel(Home.AFTER)
         home.destroy()
 
-    """Show button function"""
-
     def show():
+        """Show button function"""
+
         global sh
         if not sh:
             e["show"] = ""
