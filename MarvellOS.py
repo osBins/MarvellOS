@@ -143,7 +143,7 @@ def welcome(o=""):
         fg="dark blue",
         font=("Curlz MT", 35),
     )
-    title_label.place(x=70, y=100)
+    title_label.place(x=47, y=100)
 
     shbtn = Button(
         welcome_screen,
@@ -181,7 +181,7 @@ def welcome(o=""):
         fg="black",
     )
     enterpass.place(x=96, y=215)
-    e = Entry(welcome_screen, show="*", width=30)
+    e = Entry(welcome_screen, show="*", width=27)
     e.focus_set()  # password entry field
     e.place(x=45, y=240)
 
@@ -199,7 +199,7 @@ def welcome(o=""):
         fg="red",
         font=("Century", 10, "bold"),
     )
-    inf.place(x=10, y=355)
+    inf.place(x=5, y=375)
     """Clock on the home screen"""
     global clock
     clock = Label(
@@ -1292,7 +1292,7 @@ class Home:
                 self.co = 1
 
     def change_password(self):
-        """Called when Change password button is pressed"""
+        """Called when 'Change Password' button is pressed"""
 
         global password
         self.passwin = Tk()
